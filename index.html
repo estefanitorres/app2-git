@@ -1,0 +1,405 @@
+﻿<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+   <title>segunda aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app1.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/> 
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+  
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/MINI-White.jpg','imagenes/images.jpg','imagenes/celular6.jpg','imagenes/celular7.png')">
+
+   <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+     <h1>TELEFONIA CELULAR</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>CELULAR LG</h1>
+       <div>
+       <p>Esta es la imagen del celular:</p>
+       <br>
+	   </div>
+	   <div>
+	     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen_sus','','imagenes/celular6.jpg',1)"><img src="imagenes/celular1.jpg" width="30%" height="30%" id="imagen_sus"></a> </div>
+	   </div>
+	   </div>
+	   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>CELULAR hTc</h1>
+       <div>
+       <p>Esta es la imagen del celular:</p>
+       <br>
+       </div>
+        <div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image','','imagenes/celular7.png',1)"><img src="imagenes/celular2.jpg" name="Image" width="30%" height="30%" id="Image"></a> </div>
+       </div>
+      </div>
+     <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>DEFINICION DEL CELULAR</h2>
+             <p>Se muestra la definición</p>
+          </a>
+       </li>   
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>HISTORIA DE LA TELEFONIA CELULAR</h2>
+             <p> Se muestra la historia </p>
+          </a>
+        </li>
+        <li class="ui-fir ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>CLASIFICACION DE LOS CELULARES</h2>
+             <p>Se muestra la clasificación</p>
+           </a>
+        </li>
+        <li class="ui-fir ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>COMPAÑIAS</h2>
+             <p>Se muestran las comañias que ofrecen su servicio telefonico en México</p>
+           </a>
+        </li>
+       </ul>
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/celular2.jpg" alt="celular2" title="celular2" id="wows1_0"/></li>
+		<li><img src="data1/images/celular2_0.png" alt="celular2" title="celular2" id="wows1_1"/></li>
+		<li><img src="data1/images/celular3.jpg" alt="celular3" title="celular3" id="wows1_2"/></li>
+		<li><img src="data1/images/celular4.jpg" alt="celular4" title="celular4" id="wows1_3"/></li>
+		<li><img src="data1/images/celular5.jpg" alt="celular5" title="celular5" id="wows1_4"/></li>
+		<li><img src="data1/images/celular6.jpg" alt="celular6" title="celular6" id="wows1_5"/></li>
+		<li><img src="data1/images/celular7.png" alt="celular7" title="celular7" id="wows1_6"/></li>
+		<li><img src="data1/images/gama_alta.jpg" alt="gama_alta" title="gama_alta" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/gama_media.jpg" alt="http://wowslider.com/" title="gama_media" id="wows1_8"/></a></li>
+		<li><img src="data1/images/historia.png" alt="historia" title="historia" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="celular2"><span><img src="data1/tooltips/celular2.jpg" alt="celular2"/>1</span></a>
+		<a href="#" title="celular2"><span><img src="data1/tooltips/celular2_0.png" alt="celular2"/>2</span></a>
+		<a href="#" title="celular3"><span><img src="data1/tooltips/celular3.jpg" alt="celular3"/>3</span></a>
+		<a href="#" title="celular4"><span><img src="data1/tooltips/celular4.jpg" alt="celular4"/>4</span></a>
+		<a href="#" title="celular5"><span><img src="data1/tooltips/celular5.jpg" alt="celular5"/>5</span></a>
+		<a href="#" title="celular6"><span><img src="data1/tooltips/celular6.jpg" alt="celular6"/>6</span></a>
+		<a href="#" title="celular7"><span><img src="data1/tooltips/celular7.png" alt="celular7"/>7</span></a>
+		<a href="#" title="gama_alta"><span><img src="data1/tooltips/gama_alta.jpg" alt="gama_alta"/>8</span></a>
+		<a href="#" title="gama_media"><span><img src="data1/tooltips/gama_media.jpg" alt="gama_media"/>9</span></a>
+		<a href="#" title="historia"><span><img src="data1/tooltips/historia.png" alt="historia"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+         <img src="imagenes/logo.png" width="76" height="69" alt="icono"> </div>
+        <div>
+          <h4>Aplicacion Dos</h4>
+          <h4>ESTEFANI TORRES BAUTISTA</h4>
+        </div>
+</div>
+        </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>DEFINICION</h1>
+           </div>
+           <div data-role="content" align="center">
+             <div>
+               <h2>El teléfono móvil o celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil.</h2>
+             </div>
+             <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>CELULAR 1</h1>
+       <div>
+        <p>Esta es la foto del celular: </p>
+        <br>
+       </div>
+       <div>
+        <img src="imagenes/celular3.jpg" width="30%" height="30%" alt="celular3"></div>
+      </div>
+     </div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>CELULAR 2</h1>
+       <div>
+        <p>Esta es la foto del celular: </p>
+        <br>
+       </div>
+       <div>
+        <img src="imagenes/celular4.jpg" width="30%" height="30%" alt="celular4"></div>
+      </div>
+     </div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>CELULAR 3</h1>
+       <div>
+        <p>Esta es la foto del celular: </p>
+        <br>
+       </div>
+       <div><img src="imagenes/celular5.jpg" width="30%" height="30%" alt="huawei"></div>
+      </div>
+     </div>
+           </div>
+           <div data-role="footer" data-theme="a" data-position="fixed">
+             <h4>Aplicacion Dos, ETB</h4>
+           </div>
+</div>
+         
+         
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Historia</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2> El teléfono móvil o teléfono celular es un aparato indispensable en la actualidad; sin embargo su popularización ha sido un fenómeno muy reciente. En un principio el teléfono móvil solo podía ser usado en vehículos por su tamaño, reduciéndose posteriormente a una unidad portátil, y finalmente al tamaño de bolsillo que utilizamos hoy. Pero el teléfono en sí es solo una pequeña parte de un sistema de telefonía mayor.
+El sistema celular fue creado para satisfacer la demanda de comunicación móvil dentro de un espectro de radiofrecuencia limitado. Esta limitación es el factor original que motivó y sigue motivando el desarrollo del teléfono móvil, frente a otros de los varios factores como la duración de la batería o el tamaño del aparato. El sistema debe acomodar miles de usuarios dentro de un espectro reducido para transmitir cada vez más información. La transmisión de voz, pero actualmente también la demanda de imágenes, vídeos y acceso a internet, continúan aumentando los requisitos del sistema.
+
+El 3 de abril de 1973, Martín Cooper directivo de Motorola realizó la primera llamada desde un teléfono móvil del proyecto DynaTAC 8000X desde una calle de Nueva York. precisamente a su mayor rival en el sector de telefonía: Joel Engel, de los Bell Labs de AT&T.
+</h2></div>
+        </div>
+            <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Foto 1</h1>
+       <div>
+        <p>Esta es la foto: </p>
+        <br>
+       </div>
+       <div><img src="imagenes/historia2.jpg" width="30%" height="30%" alt="historia"></div>
+      </div>
+     </div>
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Foto 2</h1>
+       <div>
+        <p>Esta es la foto: </p>
+        <br>
+       </div>
+       <div><img src="imagenes/historia.png" width="20%" height="20%" alt="historia1"></div>
+      </div>
+     </div>
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Foto 3</h1>
+       <div>
+        <p>Esta es la foto: </p>
+        <br>
+       </div>
+       <div><img src="imagenes/historia3.png" width="30%" height="30%" alt="historia3"></div>
+      </div>
+     </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Dos, ETB</h4>
+        </div>
+</div>
+
+      <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>CLASIFICACION</h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+               <h2>GAMA BAJA</h2>
+               </div>
+               <h2>En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones (Ej: el nokia n8 es una reliquia de colección pero su cámara es muy adelantada para cuando fue lanzado al mercado)
+Suelen ser pequeños
+	Tienen funciones básicas o las funciones que traen ya no están a la altura de un SmartPhone (ej:nokia)
+	Precios muy economicos
+	Características muy limitadas (cámara VGA, memoria interna, sin flash, se ponen muy lentos con el tiempo)
+	No reciben soporte ni actualizaciones.
+</h2>
+</div>
+<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>CELULAR GAMA BAJA </h1>
+       <div>
+        <p>Esta es la foto del celular: </p>
+        <br>
+       </div>
+       <div>
+       <img src="imagenes/celular_gamabaja.jpg" width="30%" height="30%" alt="baja"></div>
+      </div>
+     </div>
+     <div>
+     <div data-role="content" align="center">
+     <h2>GAMA MEDIA</h2>
+               </div>
+               <h2>Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.
+	Suelen ser muy equilibrados en sus características
+	Generalmente no superan los 500 dólares en precio (como mucho).
+	Tienen algunas funciones de la gama alta del momento.
+	Los materiales ya son de calidad aceptable.
+	Pantallas que no superan las 4.5 pulgadas (en promedio).
+	Cámaras de 3 a 5 Mpx
+	Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM
+
+</h2>
+</div>
+<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>CELULAR GAMA MEDIA</h1>
+       <div>
+        <p>Esta es la foto del celular: </p>
+        <br>
+       </div>
+       <div>
+       <img src="imagenes/gama_media.jpg" width="30%" height="30%" alt="media"></div>
+      </div>
+     </div>
+     <div data-role="content" align="center">
+     <h2>GAMA ALTA</h2>
+               </div>
+               <h2>Aquí se ubican los mejores, puedes hasta lavarte los dientes con ellos (es broma), se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.
+Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida.
+También pueden incluirse otros terminales no tan nuevos pero que siguen siendo una excelente opción en gama alta aunque no cumplan con el requisito del precio.
+Pantallas de 4 pulgadas en adelante
+	Memoria interna desde 16GB
+	Soporte de actualizaciones (las recibe antes pero depende de la marca)
+	Diseñados para redes 4G
+	Muchos núcleos, procesadores y RAM para que sean muy rápidos
+	Cámaras de calidad desde 8 Mpx
+	Destacan por ser relativamente delgados
+	Eficiencia energética
+	Se conectan con la TV
+	Desde 800 dólares en adelante
+	Se conectan con Wearables (Galaxy Gear,iWatch, etc)
+	Mide tu ritmo cardíaco, predice el futuro, te ayuda a bajar de peso, puedes mirar las estrellas, lee tu mente (es broma) y todo lo que se te ocurra.
+</h2>
+<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>CELULAR GAMA ALTA</h1>
+       <div>
+        <p>Esta es la foto del celular: </p>
+        <br>
+       </div>
+       <div>
+       <img src="imagenes/gama_alta.jpg" width="30%" height="30%" alt="alta"></div>
+      </div>
+     </div>
+</div>
+
+</div>
+       
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>COMPAÑIAS</h1>
+     </div>
+     <div data-role="content" align="center">
+        <div>
+          <h2>UNEFON</h2>
+       </div>
+<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Logo</h1>
+       <div>
+        <p>Este es su logo: </p>
+        <br>
+       </div>
+       <div>
+         <img src="imagenes/unefon.png" width="30%" height="30%" alt="unefon"></div>
+      </div>
+     </div>
+<div data-role="content" align="center">
+         <div>
+          <h3>TELCEL</h3>
+       </div>
+           <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Foto 2</h1>
+       <div>
+        <p>Este es su logo: </p>
+        <br>
+       </div>
+       <div>
+       <img src="imagenes/telcel.jpg" width="30%" height="30%" alt="telcel"> </div>
+     </div>
+         </div>
+       <div data-role="content" align="center">
+         <div>
+          <h4>MOVISTAR</h4>
+         </div>
+       </div>
+        <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Foto 2</h1>
+       <div>
+        <p>Este es su logo: </p>
+        <br>
+       </div>
+       <div>
+        <img src="imagenes/movistar.png" width="30%" height="30%" alt="movistar"></div>
+     </div>
+         </div>
+          <div data-role="content" align="center">
+        <div>
+          <h2>AT&T </h2>
+       </div>
+     </div>
+      <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Foto 2</h1>
+       <div>
+        <p>Este es su logo: </p>
+        <br>
+       </div>
+       <div>
+       <img src="imagenes/att.png" width="30%" height="30%" alt="att"></div>
+     </div>
+         </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, ETB</h4>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+</body>
+</html>
+
+ 
+                                                       
+                                        
+                                                          
+                
+                     
+   
